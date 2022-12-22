@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>Shopping Cart List</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Unit Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="product">
+            <td>Product 1</td>
+            <td class="price">100</td>
+            <td class="count">1</td>
+            <td class="total">100</td>
+            <td onclick="heart(event)">
+              <i class="fas fa-heart"></i>
+            </td>
+            <td class="add" onclick="add(event)">
+              <i class="fas fa-plus"></i>
+            </td>
+            <td class="remove" onclick="remove(event)">
+              <i class="fas fa-minus"></i>
+            </td>
+            <td class="del" onclick="deleteProduct(event)">
+              <i class="fas fa-trash"></i>
+            </td>
+          </tr>
+          <tr class="product">
+            <td>Product 2</td>
+            <td class="price">300</td>
+            <td class="count">1</td>
+            <td class="total">300</td>
+            <td onclick="heart(event)">
+              <i class="fas fa-heart"></i>
+            </td>
+            <td class="add" onclick="add(event) ">
+              <i class="fas fa-plus"></i>
+            </td>
+            <td class="remove" onclick="remove(event)">
+              <i class="fas fa-minus"></i>
+            </td>
+            <td class="del" onclick="deleteProduct(event) ">
+              <i class="fas fa-trash"></i>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+      <div class="todoTr">
+        <h2>Total :</h2>
+        <h2 class="totalAll">400</h2>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
